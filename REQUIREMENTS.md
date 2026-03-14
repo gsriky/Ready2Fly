@@ -156,12 +156,38 @@ Once the pilot enters the flight details, the app automatically retrieves and an
 - Aeromedical factor consideration
 - Overall **Go / No-Go recommendation** with clear reasoning
 
-## 7. User Roles
+## 7. Custom Pilot Checklists & Community Best Practices
+
+Each pilot has their own methodology and best practices for route planning and flight readiness. The app should support this through a flexible, customizable checklist system.
+
+### 7.1 Custom Pre-Flight Checklists
+- Pilots can **record their own personal go-to checks** — the specific steps they always follow before a flight
+- These are captured in a simple, conversational way (similar to how requirements are being dictated here)
+- The app incorporates these custom checks into the Go/No-Go decision process **in addition to** the app's built-in analysis
+- Examples of custom checks a pilot might add:
+  - "I always check for mountain wave activity when flying east of the Sierras"
+  - "I won't fly if crosswinds exceed 12 knots at the destination"
+  - "I always review the hot spots diagram for unfamiliar airports"
+  - "I check density altitude if temperature is above 90°F"
+
+### 7.2 Pilot-to-Pilot Flexibility
+- Every pilot's checklist is **unique to them** — different pilots have different methodologies, risk tolerances, and best practices
+- The system must be **super easy** to customize — a pilot should be able to add, remove, or reorder their personal checks with minimal friction
+- Custom checks are treated as first-class inputs to the Go/No-Go decision, not just a separate list
+
+### 7.3 Community Knowledge Sharing (Future)
+- Pilots can **share their checklists** with other pilots
+- A pilot downloading a shared checklist gets the benefit of another experienced pilot's methodology
+- The app says: "Here's what this pilot always checks — I'll incorporate these into your flight assessment too"
+- This creates a **wealth of community best practices** that makes every pilot's pre-flight process better
+- Shared checklists can be adopted as-is or customized further by the receiving pilot
+
+## 8. User Roles
 
 - **Primary User:** General aviation pilot (initially the app creator, personal use via TestFlight)
 - **Future Users:** Friends and other GA pilots (via App Store)
 
-## 8. Future Enhancements (Post-MVP)
+## 9. Future Enhancements (Post-MVP)
 
 *(To be defined as the Go/No-Go MVP is built out)*
 
