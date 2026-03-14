@@ -79,11 +79,55 @@ The following is the step-by-step process the app automates — the same sequenc
   - Practice an instrument approach
 - Show approach types available (ILS, RNAV/GPS, VOR, etc.)
 
-### Step 5: Weather Along the Route
-*(To be detailed — icing, turbulence, convective activity, IMC/VFR along route segments)*
+### Step 5: Weather Briefing & Route Hazards
+- Generate a full **weather briefing** for the planned flight (equivalent to ForeFlight's weather briefing)
+- Check for **AIRMETs** along the route:
+  - **Icing AIRMETs** — any icing advisories along the route or at planned altitude
+  - **IFR/MVFR AIRMETs** — areas of reduced visibility or low ceilings
+  - **Turbulence AIRMETs** — moderate or greater turbulence advisories
+- Check for **SIGMETs** — significant meteorological hazards (convective activity, severe turbulence, volcanic ash, etc.)
+- Check for **NOTAMs** along the route:
+  - Closed runways or airports
+  - TFRs (Temporary Flight Restrictions)
+  - Navigation aid outages
+  - Any other notices that could affect the flight
+- Evaluate **winds aloft** along the route against the pilot's personal minimums (e.g., crosswind limits)
+- Flag anything that exceeds personal minimums or aircraft capabilities
 
-### Step 6: Risk Assessment & Go/No-Go Decision
-*(To be detailed — comparison against personal minimums and aircraft capabilities)*
+### Step 6: Departure & Arrival Weather Assessment
+- Assess actual/forecast conditions at **departure time**:
+  - Sky condition (clear, scattered, broken, overcast)
+  - Visibility (e.g., mist, fog, haze)
+  - Ceiling height
+  - Compare against pilot's **personal minimums for takeoff**
+- Assess forecast conditions at **estimated arrival time**:
+  - Same checks as departure
+  - Compare against pilot's **personal minimums for landing**
+- Flag any conditions outside personal minimums (e.g., "Broken ceiling at 1,200 ft — below your 2,000 ft minimum")
+
+### Step 7: Traffic Pattern & Visual Arrival Guide
+This is a key differentiating feature — helping pilots visually find and join the traffic pattern at unfamiliar airports.
+
+- Given the **destination airport** and **active runway** (determined by current winds):
+  - Recommend the **active runway** based on wind direction
+  - Show a **visual representation** of the traffic pattern (left or right traffic as published)
+  - Provide **GPS fixes** (lat/lon waypoints) for each leg of the traffic pattern:
+    - Entry point (e.g., 45° entry to downwind)
+    - Downwind leg position and altitude
+    - Base turn point
+    - Final approach
+  - Show the **traffic pattern altitude** (TPA) for the airport/runway
+  - Account for the **direction of arrival** — recommend the appropriate pattern entry based on where the pilot is coming from (e.g., arriving from over the coast vs. from inland)
+- Works for both **towered** and **non-towered** airports
+- Especially valuable for unfamiliar airports (e.g., first-time arrival at KPAO where the airport can be hard to spot visually)
+
+### Step 8: Risk Assessment & Go/No-Go Decision
+- Aggregate all data from Steps 1–7
+- Compare every factor against:
+  - Pilot's **personal minimums**
+  - Aircraft's **capabilities and limitations**
+- Produce a clear **Go / No-Go recommendation** with itemized reasoning
+- Highlight any individual factors that are marginal or exceeded
 
 ## 6. Automated Data & Analysis
 
