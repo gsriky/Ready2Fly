@@ -1,6 +1,6 @@
 import Foundation
 
-struct AircraftProfile: Codable {
+struct AircraftProfile: Codable, Equatable {
     var tailNumber: String = ""
     var makeModel: String = "Cirrus SR20"
     var aircraftCategory: AircraftCategory = .singleEngineLand
